@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		AD58F8FA288AA05800045012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58F8F9288AA05800045012 /* AppDelegate.swift */; };
 		AD58F8FC288AA05800045012 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58F8FB288AA05800045012 /* SceneDelegate.swift */; };
-		AD58F8FE288AA05800045012 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD58F8FD288AA05800045012 /* ViewController.swift */; };
 		AD58F901288AA05800045012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD58F8FF288AA05800045012 /* Main.storyboard */; };
 		AD58F903288AA05800045012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD58F902288AA05800045012 /* Assets.xcassets */; };
 		AD58F906288AA05800045012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD58F904288AA05800045012 /* LaunchScreen.storyboard */; };
+		AD701C7C288C109F003CE4EA /* ChoiceCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C7B288C109F003CE4EA /* ChoiceCollectionViewController.swift */; };
+		AD701C7E288C10DB003CE4EA /* CharactersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C7D288C10DB003CE4EA /* CharactersCollectionViewCell.swift */; };
+		AD701C80288C1153003CE4EA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C7F288C1153003CE4EA /* DetailViewController.swift */; };
+		AD701C82288C117B003CE4EA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C81288C117B003CE4EA /* MainViewController.swift */; };
+		AD701C84288C11BA003CE4EA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C83288C11BA003CE4EA /* SettingsTableViewController.swift */; };
+		AD701C86288C1222003CE4EA /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C85288C1222003CE4EA /* SettingsTableViewCell.swift */; };
+		AD701C88288C126D003CE4EA /* NamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C87288C126D003CE4EA /* NamingViewController.swift */; };
+		AD701C8C288C1DBB003CE4EA /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C8B288C1DBB003CE4EA /* Extenstions.swift */; };
+		AD701C90288C3F07003CE4EA /* DamagotchiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C8F288C3F07003CE4EA /* DamagotchiData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD58F8F6288AA05800045012 /* ProjectDamagotchi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectDamagotchi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD58F8F9288AA05800045012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD58F8FB288AA05800045012 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD58F8FD288AA05800045012 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD58F900288AA05800045012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD58F902288AA05800045012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD58F905288AA05800045012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD58F907288AA05800045012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD701C7B288C109F003CE4EA /* ChoiceCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceCollectionViewController.swift; sourceTree = "<group>"; };
+		AD701C7D288C10DB003CE4EA /* CharactersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCollectionViewCell.swift; sourceTree = "<group>"; };
+		AD701C7F288C1153003CE4EA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AD701C81288C117B003CE4EA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AD701C83288C11BA003CE4EA /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		AD701C85288C1222003CE4EA /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		AD701C87288C126D003CE4EA /* NamingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamingViewController.swift; sourceTree = "<group>"; };
+		AD701C8B288C1DBB003CE4EA /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
+		AD701C8F288C3F07003CE4EA /* DamagotchiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamagotchiData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +74,37 @@
 			children = (
 				AD58F8F9288AA05800045012 /* AppDelegate.swift */,
 				AD58F8FB288AA05800045012 /* SceneDelegate.swift */,
-				AD58F8FD288AA05800045012 /* ViewController.swift */,
+				AD701C8B288C1DBB003CE4EA /* Extenstions.swift */,
+				AD701C8F288C3F07003CE4EA /* DamagotchiData.swift */,
 				AD58F8FF288AA05800045012 /* Main.storyboard */,
+				AD701C8A288C14EA003CE4EA /* MainAndSettings */,
+				AD701C89288C14C0003CE4EA /* ChoosingDamagotchi */,
 				AD58F902288AA05800045012 /* Assets.xcassets */,
 				AD58F904288AA05800045012 /* LaunchScreen.storyboard */,
 				AD58F907288AA05800045012 /* Info.plist */,
 			);
 			path = ProjectDamagotchi;
+			sourceTree = "<group>";
+		};
+		AD701C89288C14C0003CE4EA /* ChoosingDamagotchi */ = {
+			isa = PBXGroup;
+			children = (
+				AD701C7B288C109F003CE4EA /* ChoiceCollectionViewController.swift */,
+				AD701C7D288C10DB003CE4EA /* CharactersCollectionViewCell.swift */,
+				AD701C7F288C1153003CE4EA /* DetailViewController.swift */,
+			);
+			path = ChoosingDamagotchi;
+			sourceTree = "<group>";
+		};
+		AD701C8A288C14EA003CE4EA /* MainAndSettings */ = {
+			isa = PBXGroup;
+			children = (
+				AD701C81288C117B003CE4EA /* MainViewController.swift */,
+				AD701C83288C11BA003CE4EA /* SettingsTableViewController.swift */,
+				AD701C85288C1222003CE4EA /* SettingsTableViewCell.swift */,
+				AD701C87288C126D003CE4EA /* NamingViewController.swift */,
+			);
+			path = MainAndSettings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +178,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD58F8FE288AA05800045012 /* ViewController.swift in Sources */,
+				AD701C7C288C109F003CE4EA /* ChoiceCollectionViewController.swift in Sources */,
 				AD58F8FA288AA05800045012 /* AppDelegate.swift in Sources */,
+				AD701C86288C1222003CE4EA /* SettingsTableViewCell.swift in Sources */,
+				AD701C80288C1153003CE4EA /* DetailViewController.swift in Sources */,
+				AD701C88288C126D003CE4EA /* NamingViewController.swift in Sources */,
+				AD701C82288C117B003CE4EA /* MainViewController.swift in Sources */,
+				AD701C8C288C1DBB003CE4EA /* Extenstions.swift in Sources */,
 				AD58F8FC288AA05800045012 /* SceneDelegate.swift in Sources */,
+				AD701C90288C3F07003CE4EA /* DamagotchiData.swift in Sources */,
+				AD701C7E288C10DB003CE4EA /* CharactersCollectionViewCell.swift in Sources */,
+				AD701C84288C11BA003CE4EA /* SettingsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
