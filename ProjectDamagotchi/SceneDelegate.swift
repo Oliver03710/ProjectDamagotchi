@@ -18,19 +18,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         window = UIWindow(windowScene: scene)
         
-        UserDefaults.standard.set(false, forKey: "Intro")
-        
         if UserDefaults.standard.bool(forKey: "Intro") {
             
             let sb = UIStoryboard(name: "Main", bundle: nil)
-            guard let vc = sb.instantiateViewController(withIdentifier: ChoiceCollectionViewController.identifier) as? ChoiceCollectionViewController else { return }
+            guard let vc = sb.instantiateViewController(withIdentifier: MainViewController.identifier) as? MainViewController else { return }
             let nav = UINavigationController(rootViewController: vc)
             window?.rootViewController = nav
             
         } else {
 
             let sb = UIStoryboard(name: "Main", bundle: nil)
-            guard let vc = sb.instantiateViewController(withIdentifier: MainViewController.identifier) as? MainViewController else { return }
+            guard let vc = sb.instantiateViewController(withIdentifier: ChoiceCollectionViewController.identifier) as? ChoiceCollectionViewController else { return }
             let nav = UINavigationController(rootViewController: vc)
             window?.rootViewController = nav
 
