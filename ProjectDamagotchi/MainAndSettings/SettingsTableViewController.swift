@@ -44,6 +44,13 @@ class SettingsTableViewController: UITableViewController {
         let alert = UIAlertController(title: alertText, message: alertMessage, preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: buttonName, style: .default) { action -> Void in
+            UserDefaults.standard.removeObject(forKey: "Naming")
+            UserDefaults.standard.removeObject(forKey: "Intro")
+            UserDefaults.standard.removeObject(forKey: "Character")
+            UserDefaults.standard.removeObject(forKey: "Level")
+            UserDefaults.standard.removeObject(forKey: "Food")
+            UserDefaults.standard.removeObject(forKey: "Water")
+            
             let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
             let sceneDelegate = windowScene?.delegate as? SceneDelegate
             
@@ -61,6 +68,10 @@ class SettingsTableViewController: UITableViewController {
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.loadView()
+    }
+    
     // MARK: - Table View Functions
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -74,7 +85,7 @@ class SettingsTableViewController: UITableViewController {
         
         cell.configureCells(indexPath: indexPath)
         cell.layoutMargins = UIEdgeInsets.zero
-        
+
         return cell
     }
     

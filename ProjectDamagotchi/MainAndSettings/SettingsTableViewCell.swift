@@ -20,7 +20,7 @@ class SettingsTableViewCell: UITableViewCell {
     
     let arr = ["pencil", "moon.fill", "arrow.clockwise"]
     let title = ["내 이름 설정하기", "다마고치 변경하기", "데이터 초기화"]
-    let detail = ["이름", "", ""]
+    var detail = ["\(UserDefaults.standard.string(forKey: "Naming") ?? "대장님")", "", ""]
     
     // MARK: - Helper Functions
     
@@ -36,12 +36,5 @@ class SettingsTableViewCell: UITableViewCell {
         detailLabel.text = detail[indexPath.row]
         detailLabel.textColor = .fontAndBorderColor()
         detailLabel.font = .systemFont(ofSize: 13)
-        
-        
     }
-    
-    
-    
-    
-    
 }
