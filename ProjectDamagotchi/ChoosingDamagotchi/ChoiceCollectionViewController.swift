@@ -13,6 +13,9 @@ class ChoiceCollectionViewController: UICollectionViewController {
     
     static let identifier = "ChoiceCollectionViewController"
     
+    let collectionMonster = DamagotchiData()
+    
+    
     // MARK: - Init
     
     override func viewDidLoad() {
@@ -33,7 +36,7 @@ class ChoiceCollectionViewController: UICollectionViewController {
     
     func configureCells() {
         let layout = UICollectionViewFlowLayout()
-        let spacing: CGFloat = 28
+        let spacing: CGFloat = 20
         let width = UIScreen.main.bounds.width - (spacing * 4)
         
         layout.itemSize = CGSize(width: width / 3, height: (width / 3) * 1.2)
@@ -54,8 +57,17 @@ class ChoiceCollectionViewController: UICollectionViewController {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharactersCollectionViewCell", for: indexPath) as? CharactersCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.configureCellDetails()
         
+        switch indexPath.row {
+        case 0:
+            cell.configureCellDetails(inputImage: "\(collectionMonster.damas[indexPath.row].characterClass)-\(collectionMonster.damas[indexPath.row].level[5])", name: collectionMonster.damas[indexPath.row].name)
+        case 1:
+            cell.configureCellDetails(inputImage: "\(collectionMonster.damas[indexPath.row].characterClass)-\(collectionMonster.damas[indexPath.row].level[5])", name: collectionMonster.damas[indexPath.row].name)
+        case 2:
+            cell.configureCellDetails(inputImage: "\(collectionMonster.damas[indexPath.row].characterClass)-\(collectionMonster.damas[indexPath.row].level[5])", name: collectionMonster.damas[indexPath.row].name)
+        default:
+            cell.configureCellDetails(inputImage: "noImage", name: "준비중이에요")
+        }
         
         return cell
     }
@@ -67,6 +79,20 @@ class ChoiceCollectionViewController: UICollectionViewController {
         guard let vc = sb.instantiateViewController(withIdentifier: DetailViewController.identifier) as? DetailViewController else { return }
         vc.modalPresentationStyle = .overCurrentContext
         
+        if UserDefaults.standard.object(forKey: "Character") != nil {
+            if indexPath.row >= 0, indexPath.row < 3 {
+                vc.detailMonster = collectionMonster.damas[indexPath.row]
+            } else {
+                return
+            }
+        } else {
+            if indexPath.row >= 0, indexPath.row < 3 {
+                vc.detailMonster = collectionMonster.damas[indexPath.row]
+            } else {
+                return
+            }
+        }
+
         present(vc, animated: true)
     }
 

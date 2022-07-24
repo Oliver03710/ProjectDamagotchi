@@ -17,9 +17,17 @@ class CharactersCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Helper Functions
     
-    func configureCellDetails() {
-        damagotchiImageView.image = UIImage(named: "noImage")
+    func configureCellDetails(inputImage: String, name: String) {
+        damagotchiImageView.image = UIImage(named: inputImage)
         
-        damagotchiLabel.text = "준비중이에요"
+        damagotchiLabel.text = name
+        damagotchiLabel.layer.borderColor = UIColor.fontAndBorderColor().cgColor
+        damagotchiLabel.layer.borderWidth = 1
+        damagotchiLabel.clipsToBounds = true
+        damagotchiLabel.layer.cornerRadius = 2
+        damagotchiLabel.font = .systemFont(ofSize: 14)
+        damagotchiLabel.textColor = .fontAndBorderColor()
+        damagotchiLabel.textAlignment = .center
+        damagotchiLabel.numberOfLines = 0
     }
 }
