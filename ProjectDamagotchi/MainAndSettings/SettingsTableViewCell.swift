@@ -24,6 +24,8 @@ class SettingsTableViewCell: UITableViewCell {
     
     // MARK: - Helper Functions
     
+    /// 셀에 데이터 삽입
+    /// - Parameter indexPath: 컬렉션 뷰의 indexPath
     func configureCells(indexPath: IndexPath) {
         
         settingImageView.image = UIImage(systemName: arr[indexPath.row])

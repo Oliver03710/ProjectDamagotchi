@@ -36,10 +36,10 @@ class ChoiceCollectionViewController: UICollectionViewController {
     
     func configureCells() {
         let layout = UICollectionViewFlowLayout()
-        let spacing: CGFloat = 20
+        let spacing: CGFloat = 24
         let width = UIScreen.main.bounds.width - (spacing * 4)
         
-        layout.itemSize = CGSize(width: width / 3, height: (width / 3) * 1.2)
+        layout.itemSize = CGSize(width: width / 3, height: (width / 3) * 1.3)
         layout.scrollDirection = .vertical
         layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
         layout.minimumLineSpacing = spacing

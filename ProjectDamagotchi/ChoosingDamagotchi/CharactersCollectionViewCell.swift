@@ -24,8 +24,8 @@ class CharactersCollectionViewCell: UICollectionViewCell {
         damagotchiLabel.layer.borderColor = UIColor.fontAndBorderColor().cgColor
         damagotchiLabel.layer.borderWidth = 1
         damagotchiLabel.clipsToBounds = true
-        damagotchiLabel.layer.cornerRadius = 2
-        damagotchiLabel.font = .systemFont(ofSize: 14)
+        damagotchiLabel.layer.cornerRadius = 4
+        damagotchiLabel.font = .boldSystemFont(ofSize: 12)
         damagotchiLabel.textColor = .fontAndBorderColor()
         damagotchiLabel.textAlignment = .center
         damagotchiLabel.numberOfLines = 0

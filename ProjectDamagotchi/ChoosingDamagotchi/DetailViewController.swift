@@ -124,11 +124,18 @@ class DetailViewController: UIViewController {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         guard let vc = sb.instantiateViewController(withIdentifier: MainViewController.identifier) as? MainViewController else { return }
         let nav = UINavigationController(rootViewController: vc)
-        nav.modalTransitionStyle = .crossDissolve
         
         sceneDelegate?.window?.rootViewController = nav
         sceneDelegate?.window?.makeKeyAndVisible()
+        
+        if acceptButton.titleLabel?.text == "변경하기" {
+            nav.view.alpha = 0.0
+            UIView.animate(withDuration: 0.2, delay: 0, options: [.curveEaseOut]) {
+                nav.view.alpha = 1.0
+            }
+        }
     }
+    
     
     @IBAction func cancelButtonTapped(_ sender: UIButton) {
         self.dismiss(animated: true)

@@ -5,7 +5,7 @@
 //  Created by Junhee Yoon on 2022/07/23.
 //
 
-import Foundation
+import UIKit
 
 struct Damagotchi: Codable {
     var name: String
@@ -32,7 +32,7 @@ struct Talks {
                 "목이 말라요...",
                 "물이나 줘요"]
     
-    let water = ["목이 말라요",
+    let water = ["이제 목이 안 말라요",
                  "물배가 찼어요!",
                  "크으~ 시원하다~~!",
                  "꿀꺽꿀꺽.. 캬~~!",

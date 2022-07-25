@@ -147,7 +147,6 @@ class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationItem.title = "\(UserDefaults.standard.string(forKey: "Naming") ?? "대장님")의 다마고치"
         talkingLabel.text = smallTalk.lines.randomElement()
-        
     }
 
     
