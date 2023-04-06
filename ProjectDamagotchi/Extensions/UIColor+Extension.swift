@@ -1,8 +1,8 @@
 //
-//  Extenstions.swift
+//  UIColor+Extension.swift
 //  ProjectDamagotchi
 //
-//  Created by Junhee Yoon on 2022/07/23.
+//  Created by Junhee Yoon on 2022/07/30.
 //
 
 import UIKit

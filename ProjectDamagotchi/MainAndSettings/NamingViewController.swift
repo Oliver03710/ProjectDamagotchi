@@ -11,8 +11,6 @@ class NamingViewController: UIViewController {
 
     // MARK: - Properties
     
-    static let identifier = "NamingViewController"
-    
     @IBOutlet weak var namingTextField: UITextField!
     
     
@@ -28,7 +26,9 @@ class NamingViewController: UIViewController {
     // MARK: - Selectors
     
     @objc func saveName() {
-        UserDefaults.standard.set(namingTextField.text, forKey: "Naming")
+        
+        guard let text = namingTextField.text else { return }
+        UserdefaultsHelper.standard.name = text
         self.navigationController?.popViewController(animated: true)
         
     }
@@ -38,16 +38,18 @@ class NamingViewController: UIViewController {
     
     func configureUI() {
         namingTextField.borderStyle = .none
-        namingTextField.text = UserDefaults.standard.string(forKey: "Naming") ?? "대장님"
+        namingTextField.text = UserdefaultsHelper.standard.name
         namingTextField.textColor = .fontAndBorderColor()
     }
     
     func configureNavi() {
         view.backgroundColor = .backgroundColor()
+        
         let barAppearance = UINavigationBarAppearance()
         barAppearance.backgroundColor = .backgroundColor()
         navigationItem.scrollEdgeAppearance = barAppearance
-        navigationItem.title = "\(UserDefaults.standard.string(forKey: "Naming") ?? "대장님") 이름 정하기"
+        
+        navigationItem.title = "\(UserdefaultsHelper.standard.name) 이름 정하기"
         self.navigationController?.navigationBar.tintColor = UIColor.fontAndBorderColor()
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.fontAndBorderColor()]
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "저장", style: .plain, target: self, action: #selector(saveName))

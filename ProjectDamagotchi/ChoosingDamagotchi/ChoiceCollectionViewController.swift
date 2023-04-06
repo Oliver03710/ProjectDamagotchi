@@ -11,9 +11,7 @@ class ChoiceCollectionViewController: UICollectionViewController {
 
     // MARK: - Properties
     
-    static let identifier = "ChoiceCollectionViewController"
-    
-    let collectionMonster = DamagotchiData()
+    let damagotchi = DamagotchiData()
     
     
     // MARK: - Init
@@ -25,9 +23,6 @@ class ChoiceCollectionViewController: UICollectionViewController {
     }
     
     
-    // MARK: - Selectors
-    
-    
     // MARK: - Helper Functions
     
     func configureNavi() {
@@ -36,7 +31,7 @@ class ChoiceCollectionViewController: UICollectionViewController {
     
     func configureCells() {
         let layout = UICollectionViewFlowLayout()
-        let spacing: CGFloat = 24
+        let spacing: CGFloat = 16
         let width = UIScreen.main.bounds.width - (spacing * 4)
         
         layout.itemSize = CGSize(width: width / 3, height: (width / 3) * 1.3)
@@ -53,20 +48,17 @@ class ChoiceCollectionViewController: UICollectionViewController {
         return 21
     }
     
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharactersCollectionViewCell", for: indexPath) as? CharactersCollectionViewCell else { return UICollectionViewCell() }
-        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CharactersCollectionViewCell.identifier, for: indexPath) as? CharactersCollectionViewCell else { return UICollectionViewCell() }
         
         switch indexPath.row {
-        case 0:
-            cell.configureCellDetails(inputImage: "\(collectionMonster.damas[indexPath.row].characterClass)-\(collectionMonster.damas[indexPath.row].level[5])", name: collectionMonster.damas[indexPath.row].name)
-        case 1:
-            cell.configureCellDetails(inputImage: "\(collectionMonster.damas[indexPath.row].characterClass)-\(collectionMonster.damas[indexPath.row].level[5])", name: collectionMonster.damas[indexPath.row].name)
-        case 2:
-            cell.configureCellDetails(inputImage: "\(collectionMonster.damas[indexPath.row].characterClass)-\(collectionMonster.damas[indexPath.row].level[5])", name: collectionMonster.damas[indexPath.row].name)
-        default:
-            cell.configureCellDetails(inputImage: "noImage", name: "준비중이에요")
+        case 0...damagotchi.DamagotchiInstances.count - 1:
+            cell.configureCellDetails(inputImage: damagotchi.DamagotchiInstances[indexPath.row].basicImages(character:
+                                                  damagotchi.DamagotchiInstances[indexPath.row].characterClass),
+                                      name: damagotchi.DamagotchiInstances[indexPath.row].name)
+        default: cell.configureCellDetails(inputImage: "noImage", name: "준비중이에요")
         }
         
         return cell
@@ -74,25 +66,17 @@ class ChoiceCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let sb = UIStoryboard(name: StoryboardName.main.rawValue, bundle: nil)
         
         guard let vc = sb.instantiateViewController(withIdentifier: DetailViewController.identifier) as? DetailViewController else { return }
         vc.modalPresentationStyle = .overCurrentContext
         
-        if UserDefaults.standard.object(forKey: "Character") != nil {
-            if indexPath.row >= 0, indexPath.row < 3 {
-                vc.detailMonster = collectionMonster.damas[indexPath.row]
-            } else {
-                return
-            }
-        } else {
-            if indexPath.row >= 0, indexPath.row < 3 {
-                vc.detailMonster = collectionMonster.damas[indexPath.row]
-            } else {
-                return
-            }
+        switch indexPath.row {
+        case 0...damagotchi.DamagotchiInstances.count - 1:
+            vc.damagotchi = damagotchi.DamagotchiInstances[indexPath.row]
+        default: break
         }
-
+        
         present(vc, animated: true)
     }
 

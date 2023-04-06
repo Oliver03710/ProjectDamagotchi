@@ -11,8 +11,6 @@ class SettingsTableViewCell: UITableViewCell {
 
     // MARK: - Properties
     
-    static let identifier = "SettingsTableViewCell"
-    
     @IBOutlet weak var settingImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
@@ -20,7 +18,7 @@ class SettingsTableViewCell: UITableViewCell {
     
     let arr = ["pencil", "moon.fill", "arrow.clockwise"]
     let title = ["내 이름 설정하기", "다마고치 변경하기", "데이터 초기화"]
-    var detail = ["\(UserDefaults.standard.string(forKey: "Naming") ?? "대장님")", "", ""]
+    var detail = ["\(UserdefaultsHelper.standard.name)", "", ""]
     
     // MARK: - Helper Functions
     

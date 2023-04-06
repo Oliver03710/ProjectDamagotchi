@@ -88,7 +88,7 @@
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="waterButtonTapped:" destination="UT8-7Y-DaL" eventType="touchUpInside" id="YKU-lD-cxy"/>
+                                            <action selector="foodButtonTapped:" destination="UT8-7Y-DaL" eventType="touchUpInside" id="xbS-zW-DG2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -246,7 +246,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="cancelButtonTapped:" destination="Y2h-G7-N1x" eventType="touchUpInside" id="C7l-r3-N0P"/>
+                                            <action selector="acceptButtonTapped:" destination="Y2h-G7-N1x" eventType="touchUpInside" id="Ist-wg-7rX"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDz-2x-dJa">
@@ -257,13 +257,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tav-5Q-b0W">
-                                        <rect key="frame" x="40" y="252.5" width="254" height="20.5"/>
+                                        <rect key="frame" x="40" y="244.5" width="254" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciq-cu-RM6">
-                                        <rect key="frame" x="100" y="171.5" width="134" height="24"/>
+                                        <rect key="frame" x="100" y="179.5" width="134" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="4yD-Pb-Sqo"/>
                                         </constraints>
@@ -272,7 +272,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eEr-uP-lC6">
-                                        <rect key="frame" x="112" y="53.5" width="110" height="110"/>
+                                        <rect key="frame" x="112" y="61.5" width="110" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="eEr-uP-lC6" secondAttribute="height" id="ohe-gj-Hlu"/>
                                         </constraints>
@@ -324,10 +324,10 @@
                                     <constraint firstItem="DDz-2x-dJa" firstAttribute="centerY" secondItem="kLu-GH-Pis" secondAttribute="centerY" id="l78-Y0-ZUQ"/>
                                     <constraint firstItem="ciq-cu-RM6" firstAttribute="top" secondItem="eEr-uP-lC6" secondAttribute="bottom" constant="8" id="m1U-7Y-lnL"/>
                                     <constraint firstItem="eEr-uP-lC6" firstAttribute="centerX" secondItem="kLu-GH-Pis" secondAttribute="centerX" id="n0I-f3-awM"/>
-                                    <constraint firstItem="Tav-5Q-b0W" firstAttribute="top" secondItem="DDz-2x-dJa" secondAttribute="bottom" constant="28" id="n7h-xa-QL8"/>
+                                    <constraint firstItem="Tav-5Q-b0W" firstAttribute="top" secondItem="DDz-2x-dJa" secondAttribute="bottom" constant="20" id="n7h-xa-QL8"/>
                                     <constraint firstItem="XRd-yZ-ciR" firstAttribute="top" secondItem="kNM-0F-ezZ" secondAttribute="bottom" id="nse-lk-gqO"/>
                                     <constraint firstAttribute="trailing" secondItem="DDz-2x-dJa" secondAttribute="trailing" constant="40" id="r3K-rt-XNB"/>
-                                    <constraint firstItem="DDz-2x-dJa" firstAttribute="top" secondItem="ciq-cu-RM6" secondAttribute="bottom" constant="28" id="sl5-53-0gt"/>
+                                    <constraint firstItem="DDz-2x-dJa" firstAttribute="top" secondItem="ciq-cu-RM6" secondAttribute="bottom" constant="20" id="sl5-53-0gt"/>
                                     <constraint firstItem="ciq-cu-RM6" firstAttribute="width" secondItem="kLu-GH-Pis" secondAttribute="width" multiplier="0.4" id="uoo-4m-NY0"/>
                                     <constraint firstItem="Tav-5Q-b0W" firstAttribute="leading" secondItem="kLu-GH-Pis" secondAttribute="leading" constant="40" id="zuB-VV-8Nl"/>
                                 </constraints>

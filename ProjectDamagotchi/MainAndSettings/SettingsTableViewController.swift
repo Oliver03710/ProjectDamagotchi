@@ -11,8 +11,6 @@ class SettingsTableViewController: UITableViewController {
 
     // MARK: - Properties
     
-    static let identifier = "SettingsTableViewController"
-    
     
     // MARK: - Init
     
@@ -22,6 +20,10 @@ class SettingsTableViewController: UITableViewController {
         configureNavi()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.loadView()
+    }
+    
     
     // MARK: - Helper Functions
     
@@ -38,39 +40,6 @@ class SettingsTableViewController: UITableViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.fontAndBorderColor()]
     }
     
-    
-    func showAlert(alertText : String, alertMessage : String, buttonName: String, cancelButton: String) {
-        
-        let alert = UIAlertController(title: alertText, message: alertMessage, preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: buttonName, style: .default) { action -> Void in
-            UserDefaults.standard.removeObject(forKey: "Naming")
-            UserDefaults.standard.removeObject(forKey: "Intro")
-            UserDefaults.standard.removeObject(forKey: "Character")
-            UserDefaults.standard.removeObject(forKey: "Level")
-            UserDefaults.standard.removeObject(forKey: "Food")
-            UserDefaults.standard.removeObject(forKey: "Water")
-            
-            let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-            let sceneDelegate = windowScene?.delegate as? SceneDelegate
-            
-            let sb = UIStoryboard(name: "Main", bundle: nil)
-            guard let vc = sb.instantiateViewController(withIdentifier: ChoiceCollectionViewController.identifier) as? ChoiceCollectionViewController else { return }
-            let nav = UINavigationController(rootViewController: vc)
-            
-            sceneDelegate?.window?.rootViewController = nav
-            sceneDelegate?.window?.makeKeyAndVisible()
-        })
-        
-        alert.addAction(UIAlertAction(title: cancelButton, style: .cancel, handler: nil))
-        
-        self.present(alert, animated: true, completion: nil)
-    }
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        self.loadView()
-    }
     
     // MARK: - Table View Functions
     
@@ -94,7 +63,7 @@ class SettingsTableViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let sb = UIStoryboard(name: StoryboardName.main.rawValue, bundle: nil)
         
         switch indexPath.row {
         case 0:
@@ -106,12 +75,9 @@ class SettingsTableViewController: UITableViewController {
         case 2:
             showAlert(alertText: "데이터 초기화", alertMessage: "정말 다시 처음부터 시작?", buttonName: "예", cancelButton: "아니오")
         default: break
+            
         }
         
     }
-    
-    
-    
-    
     
 }

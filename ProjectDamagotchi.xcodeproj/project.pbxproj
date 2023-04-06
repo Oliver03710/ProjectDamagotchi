@@ -12,6 +12,11 @@
 		AD58F901288AA05800045012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD58F8FF288AA05800045012 /* Main.storyboard */; };
 		AD58F903288AA05800045012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD58F902288AA05800045012 /* Assets.xcassets */; };
 		AD58F906288AA05800045012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD58F904288AA05800045012 /* LaunchScreen.storyboard */; };
+		AD6CF7DB289826550092302A /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF7DA289826550092302A /* UILabel+Extension.swift */; };
+		AD6CF7DD289845330092302A /* Buttons+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF7DC289845330092302A /* Buttons+Enum.swift */; };
+		AD6CF7DF289850BA0092302A /* TextField+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF7DE289850BA0092302A /* TextField+Enum.swift */; };
+		AD6CF7E1289851670092302A /* Image+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF7E0289851670092302A /* Image+Enum.swift */; };
+		AD6CF7E32898533A0092302A /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6CF7E22898533A0092302A /* UIViewController+Extension.swift */; };
 		AD701C7C288C109F003CE4EA /* ChoiceCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C7B288C109F003CE4EA /* ChoiceCollectionViewController.swift */; };
 		AD701C7E288C10DB003CE4EA /* CharactersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C7D288C10DB003CE4EA /* CharactersCollectionViewCell.swift */; };
 		AD701C80288C1153003CE4EA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C7F288C1153003CE4EA /* DetailViewController.swift */; };
@@ -19,8 +24,14 @@
 		AD701C84288C11BA003CE4EA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C83288C11BA003CE4EA /* SettingsTableViewController.swift */; };
 		AD701C86288C1222003CE4EA /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C85288C1222003CE4EA /* SettingsTableViewCell.swift */; };
 		AD701C88288C126D003CE4EA /* NamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C87288C126D003CE4EA /* NamingViewController.swift */; };
-		AD701C8C288C1DBB003CE4EA /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C8B288C1DBB003CE4EA /* Extenstions.swift */; };
 		AD701C90288C3F07003CE4EA /* DamagotchiData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD701C8F288C3F07003CE4EA /* DamagotchiData.swift */; };
+		AD851C462897CEB1008AAA2E /* Identifier+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD851C452897CEB1008AAA2E /* Identifier+Protocol.swift */; };
+		AD851C482897D193008AAA2E /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD851C472897D193008AAA2E /* UserDefaultsHelper.swift */; };
+		AD89A6CB289548E10009C6B9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89A6CA289548E10009C6B9 /* UIColor+Extension.swift */; };
+		AD89A6CE2895492D0009C6B9 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89A6CD2895492D0009C6B9 /* UITextField+Extension.swift */; };
+		AD89A6D028954D990009C6B9 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89A6CF28954D990009C6B9 /* UIButton+Extension.swift */; };
+		AD89A6D2289553FA0009C6B9 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89A6D1289553FA0009C6B9 /* UserDefaults+Extension.swift */; };
+		AD89A6D428955F340009C6B9 /* Storyboard+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD89A6D328955F340009C6B9 /* Storyboard+Enum.swift */; };
 		ADD6DEDD288DA42300D2ACDD /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = ADD6DEDC288DA42300D2ACDD /* Toast */; };
 		ADD6DEE0288DA4DE00D2ACDD /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ADD6DEDF288DA4DE00D2ACDD /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
@@ -33,6 +44,11 @@
 		AD58F902288AA05800045012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD58F905288AA05800045012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD58F907288AA05800045012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6CF7DA289826550092302A /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		AD6CF7DC289845330092302A /* Buttons+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Buttons+Enum.swift"; sourceTree = "<group>"; };
+		AD6CF7DE289850BA0092302A /* TextField+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Enum.swift"; sourceTree = "<group>"; };
+		AD6CF7E0289851670092302A /* Image+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Enum.swift"; sourceTree = "<group>"; };
+		AD6CF7E22898533A0092302A /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		AD701C7B288C109F003CE4EA /* ChoiceCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceCollectionViewController.swift; sourceTree = "<group>"; };
 		AD701C7D288C10DB003CE4EA /* CharactersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD701C7F288C1153003CE4EA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -40,8 +56,14 @@
 		AD701C83288C11BA003CE4EA /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		AD701C85288C1222003CE4EA /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		AD701C87288C126D003CE4EA /* NamingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamingViewController.swift; sourceTree = "<group>"; };
-		AD701C8B288C1DBB003CE4EA /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
 		AD701C8F288C3F07003CE4EA /* DamagotchiData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamagotchiData.swift; sourceTree = "<group>"; };
+		AD851C452897CEB1008AAA2E /* Identifier+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Identifier+Protocol.swift"; sourceTree = "<group>"; };
+		AD851C472897D193008AAA2E /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		AD89A6CA289548E10009C6B9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		AD89A6CD2895492D0009C6B9 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		AD89A6CF28954D990009C6B9 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		AD89A6D1289553FA0009C6B9 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		AD89A6D328955F340009C6B9 /* Storyboard+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Enum.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +100,10 @@
 			children = (
 				AD58F8F9288AA05800045012 /* AppDelegate.swift */,
 				AD58F8FB288AA05800045012 /* SceneDelegate.swift */,
-				AD701C8B288C1DBB003CE4EA /* Extenstions.swift */,
-				AD701C8F288C3F07003CE4EA /* DamagotchiData.swift */,
 				AD58F8FF288AA05800045012 /* Main.storyboard */,
+				AD851C442897CE93008AAA2E /* Protocols */,
+				AD89A6C9289548C30009C6B9 /* Extensions */,
+				AD89A6CC289549010009C6B9 /* Data */,
 				AD701C8A288C14EA003CE4EA /* MainAndSettings */,
 				AD701C89288C14C0003CE4EA /* ChoosingDamagotchi */,
 				AD58F902288AA05800045012 /* Assets.xcassets */,
@@ -109,6 +132,40 @@
 				AD701C87288C126D003CE4EA /* NamingViewController.swift */,
 			);
 			path = MainAndSettings;
+			sourceTree = "<group>";
+		};
+		AD851C442897CE93008AAA2E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AD851C452897CEB1008AAA2E /* Identifier+Protocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AD89A6C9289548C30009C6B9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD89A6CA289548E10009C6B9 /* UIColor+Extension.swift */,
+				AD89A6CD2895492D0009C6B9 /* UITextField+Extension.swift */,
+				AD89A6CF28954D990009C6B9 /* UIButton+Extension.swift */,
+				AD89A6D1289553FA0009C6B9 /* UserDefaults+Extension.swift */,
+				AD6CF7DA289826550092302A /* UILabel+Extension.swift */,
+				AD6CF7E22898533A0092302A /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AD89A6CC289549010009C6B9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AD701C8F288C3F07003CE4EA /* DamagotchiData.swift */,
+				AD89A6D328955F340009C6B9 /* Storyboard+Enum.swift */,
+				AD6CF7DC289845330092302A /* Buttons+Enum.swift */,
+				AD6CF7DE289850BA0092302A /* TextField+Enum.swift */,
+				AD6CF7E0289851670092302A /* Image+Enum.swift */,
+				AD851C472897D193008AAA2E /* UserDefaultsHelper.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,15 +247,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD851C482897D193008AAA2E /* UserDefaultsHelper.swift in Sources */,
 				AD701C7C288C109F003CE4EA /* ChoiceCollectionViewController.swift in Sources */,
 				AD58F8FA288AA05800045012 /* AppDelegate.swift in Sources */,
+				AD89A6D028954D990009C6B9 /* UIButton+Extension.swift in Sources */,
 				AD701C86288C1222003CE4EA /* SettingsTableViewCell.swift in Sources */,
+				AD89A6CB289548E10009C6B9 /* UIColor+Extension.swift in Sources */,
+				AD6CF7E1289851670092302A /* Image+Enum.swift in Sources */,
+				AD6CF7E32898533A0092302A /* UIViewController+Extension.swift in Sources */,
 				AD701C80288C1153003CE4EA /* DetailViewController.swift in Sources */,
+				AD89A6D2289553FA0009C6B9 /* UserDefaults+Extension.swift in Sources */,
+				AD6CF7DB289826550092302A /* UILabel+Extension.swift in Sources */,
 				AD701C88288C126D003CE4EA /* NamingViewController.swift in Sources */,
 				AD701C82288C117B003CE4EA /* MainViewController.swift in Sources */,
-				AD701C8C288C1DBB003CE4EA /* Extenstions.swift in Sources */,
+				AD851C462897CEB1008AAA2E /* Identifier+Protocol.swift in Sources */,
+				AD6CF7DD289845330092302A /* Buttons+Enum.swift in Sources */,
+				AD6CF7DF289850BA0092302A /* TextField+Enum.swift in Sources */,
 				AD58F8FC288AA05800045012 /* SceneDelegate.swift in Sources */,
+				AD89A6D428955F340009C6B9 /* Storyboard+Enum.swift in Sources */,
 				AD701C90288C3F07003CE4EA /* DamagotchiData.swift in Sources */,
+				AD89A6CE2895492D0009C6B9 /* UITextField+Extension.swift in Sources */,
 				AD701C7E288C10DB003CE4EA /* CharactersCollectionViewCell.swift in Sources */,
 				AD701C84288C11BA003CE4EA /* SettingsTableViewController.swift in Sources */,
 			);
